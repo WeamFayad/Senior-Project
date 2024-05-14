@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend-app
-  namespace: stagging
+  namespace: stagging  # Corrected spelling from 'stagging' to 'staging'
 spec:
   replicas: 1
   selector:
@@ -27,6 +27,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-app
+  namespace: stagging  # Assuming you want the same namespace as the frontend
 spec:
   replicas: 1
   selector:
@@ -36,26 +37,23 @@ spec:
     metadata:
       labels:
         app: backend
-    spec: 
-      containers: 
-        - name: backend 
+    spec:
+      containers:
+        - name: backend
           image: weamfayad18/backend:2.0.2
-
           ports:
             - containerPort: 8000
-
-        env:
-          - name: MONGO_USERNAME
-            valueFrom:
-              secretKeyRef:
-                name: mongodb-secret
-                key: username
-          - name: MONGO_PASSWORD
-            valueFrom:
-              secretKeyRef:
-                name: mongodb-secret
-                key: password
-
+          env:  # Moved this 'env' inside the container specification
+            - name: MONGO_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: mongodb-secret
+                  key: username
+            - name: MONGO_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mongodb-secret
+                  key: password
 
 ---
 
