@@ -1,0 +1,106 @@
+.edit-section {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  background-color: #000;
+}
+/*The backgoround -blue animator*/
+.edit-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000, var(--primary), #000);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+/*Boxes of the screen*/
+.edit-section span {
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: #181818;
+  z-index: 2;
+  transition: 1.5s;
+}
+
+.edit-section span:hover {
+  background: #1a96e3 url("../../../../public/images/G3.png") no-repeat center
+    center;
+  transition: 0s;
+  background-size: contain;
+  opacity: 1;
+}
+.edit-profile {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  background-color: aliceblue;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 70%;
+  margin: 0 auto;
+
+  font-size: 2rem;
+}
+.edit-status-messages {
+  position: absolute;
+  z-index: 3;
+
+  width: 70%;
+  margin: 0 auto;
+  bottom: 20rem;
+}
+.hide {
+  display: none;
+}
+.edit-profile img {
+  border-radius: 50%;
+  width: 20rem;
+  height: 100%;
+}
+
+.edit-profile-value {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.edit-profile-value button {
+  padding: 1rem 2rem;
+}
+.edit-profile-value p {
+  font-weight: 600;
+  color: var(--primary);
+}
+.edit-profile input {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+.edit-section .error,
+.edit-section .message {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

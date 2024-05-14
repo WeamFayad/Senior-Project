@@ -1,0 +1,29 @@
+.terms-body {
+  font-size: 2rem;
+  line-height: 3rem;
+  width: 70%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.terms-body h3 {
+  font-size: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+.terms-body h2 {
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.terms-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.terms-header img {
+  height: 15rem;
+}
+.terms-header h2 {
+  white-space: nowrap;
+}

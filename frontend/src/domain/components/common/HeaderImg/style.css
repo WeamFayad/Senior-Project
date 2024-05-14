@@ -1,0 +1,14 @@
+.section-header-img-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+
+  height: 90vh;
+  width: 100vw;
+}
+.section-header-img-1 img {
+  height:auto;
+  width:auto;
+  object-fit: cover;
+}

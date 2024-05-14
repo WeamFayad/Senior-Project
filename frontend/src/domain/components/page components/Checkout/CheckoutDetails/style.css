@@ -1,0 +1,81 @@
+.checkout-cart-all-content {
+  overflow: auto;
+  width: 70%;
+  margin: 10rem auto;
+}
+.checkout-cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  min-height: 4rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.checkout-cart-items-section {
+  display: flex;
+}
+.checkout-cart-items-section {
+  height: 7rem;
+}
+.checkout-product-main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+.checkout-product-main-info h4,
+.checkout-product-main-info p {
+  white-space: nowrap;
+  font-size: 1.7rem;
+}
+.checkout-cart-items-quantity {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+/*cart total*/
+.checkout-cart-total {
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+}
+.checkout-cart-total-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.checkout-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.checkout-actions-coupon input {
+  border-radius: 5px;
+  border: 1px solid #333;
+  padding: 0.5rem;
+}
+.checkout-action_btns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.checkout-edit-btn,
+.checkout-btn {
+  width: 100%;
+}
+.checkout-edit-btn {
+  background-color: var(--secondary);
+}
+.checkout-cart-all-content-no-items {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+}

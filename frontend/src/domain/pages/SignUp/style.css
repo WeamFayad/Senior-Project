@@ -1,0 +1,199 @@
+.Sign-in-section {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #000;
+}
+/*The backgoround -blue animator*/
+.Sign-in-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000, var(--primary), #000);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+/*Boxes of the screen*/
+.Sign-in-section span {
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: #181818;
+  z-index: 2;
+  transition: 1.5s;
+}
+
+.Sign-in-section span:hover {
+  background: #1a96e3 url("../../../../public/images/G3.png") no-repeat center
+    center;
+  transition: 0s;
+  background-size: contain;
+  opacity: 1;
+}
+
+/*Form*/
+.sign-up-part {
+  display: flex;
+  gap: 1.5rem;
+  color: var(--white);
+  font-size: 1.4rem;
+}
+.sign-up-part p {
+  font-size: 1.9rem;
+}
+.sign-up-part h4 {
+  font-size: 1.9rem;
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sign-up-part h4:hover {
+  opacity: 0.8;
+}
+
+.Sign-in-section .signin {
+  position: absolute;
+  width: 40rem;
+  background: #222;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
+}
+.Sign-in-section .signin .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.Sign-in-section .signin .content img {
+  width: 8rem;
+}
+.Sign-in-section .signin .content h2 {
+  font-size: 2.5rem;
+  color: #1a96e3;
+
+}
+.Sign-in-section .signin .content .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+/*Form inputs*/
+.Sign-in-section .signin .content .form .inputBox {
+  position: relative;
+  width: 100%;
+}
+.Sign-in-section .signin .content .form .inputBox input {
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 2.5rem 1rem 0.8rem;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.Sign-in-section .signin .content .form .inputBox i {
+  position: absolute;
+  left: 0;
+  padding: 1.5rem 1rem;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+  font-size: 1.5rem;
+}
+.signin .content .form .inputBox input:focus ~ i,
+.signin .content .form .inputBox input:valid ~ i {
+  transform: translateY(-7.5px);
+  font-size: 1rem;
+  color: #fff;
+}
+.forgot-password_link {
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.forgot-password_link:hover {
+  opacity: 0.8;
+}
+
+.signin .content .form .inputBox input[type="submit"] {
+  padding: 1rem;
+  background: #1a96e3;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35rem;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+.signin .content .form .inputBox input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/*Responsive*/
+@media (max-width: 900px) {
+  .login-section span {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+@media (max-width: 600px) {
+  .login-section span {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
+
+.terms {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  align-items: center;
+}
+.terms-text {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--white);
+}
+.terms-text-link {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 600;
+}
+.terms-text-link:hover {
+  opacity: 0.8;
+}
+.sign-up_password {
+  display: flex;
+  gap: 1rem;
+}
+.Sign-in-section .signin {
+  width: 50rem;
+}

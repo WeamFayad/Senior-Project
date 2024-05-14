@@ -1,0 +1,39 @@
+.pfp-drop-down {
+  background-color: rgba(150, 150, 150, 1);
+  border-radius: 5px;
+  position: absolute;
+  right: 3rem;
+  top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 100;
+  min-width: 12rem;
+  opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+  background-color: var(--primary);
+}
+.pfp-show {
+  transform: translateX(0%) translateY(0%);
+  opacity: 1;
+  visibility: visible;
+}
+.pfp-drop-down-item {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  color: var(--white);
+  font-weight: 600;
+}
+.pfp-drop-down-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.pfp-drop-down-item:first-child {
+  padding-top: 1rem;
+  border-radius: 5px 5px 0 0;
+}
+.pfp-drop-down-item:last-child {
+  padding-bottom: 1rem;
+  border-radius: 0 0 5px 5px;
+}

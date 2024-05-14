@@ -1,0 +1,126 @@
+.header {
+    background-image: url(../../../../../../public/images/hero/hero-main.jpeg);
+    height: 90vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header-content h1,
+  .header-content p {
+    font-size: 10rem;
+    text-align: center;
+    font-weight: 600;
+    color:navy;
+  }
+  .header-content p {
+    letter-spacing: 25px;
+  }
+  .header-ctas {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-right: 4rem;
+  }
+  .header-cta-adopt,
+  .header-cta-shop {
+    padding: 2rem 5rem;
+  }
+  .header-cta-adopt:hover,
+  .header-cta-shop:hover {
+    opacity: 0.9;
+  }
+  .header-cta-shop {
+    background-color: var(--secondary);
+  }
+  .header-table {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -7rem;
+    width: 80%;
+    min-height: 10rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header-table-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .header-table-item span {
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .header-table-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-table-item img {
+    fill: white;
+    width: 7rem;
+    height: auto;
+    z-index: 2;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    padding: 1rem;
+  }
+  @media (max-width: 1320px) {
+    .header-table {
+      min-height: 7rem;
+    }
+    .header-table-item span {
+      font-size: 1.5rem;
+    }
+    .header-table-item img {
+      width: 6rem;
+    }
+  }
+  @media (max-width: 970px) {
+    .header-table {
+      min-height: 5rem;
+    }
+    .header-table-item span {
+      font-size: 1rem;
+    }
+    .header-table-item img {
+      width: 4rem;
+    }
+  }
+  @media (max-width: 870px) {
+    .header-table {
+      min-height: 5rem;
+    }
+    .header-table-item span {
+      font-size: 1rem;
+    }
+    .header-table-item img {
+      width: 2rem;
+    }
+  }
+  @media (max-width: 550px) {
+    .header-table {
+      min-height: 5rem;
+    }
+    .header-table-item span {
+      font-size: 0.8rem;
+    }
+    .header-table-item img {
+      width: 2rem;
+    }
+  }

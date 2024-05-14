@@ -1,0 +1,88 @@
+.hero-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 100000;
+  background-color: #fff;
+  position: relative;
+  min-width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo img {
+  height: 6rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-auth .btn.sign-up {
+  background-color: var(--secondary);
+}
+.nav-auth {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+.nav-auth .btn:hover {
+  opacity: 0.9;
+}
+.nav-links .nav-link {
+  background: none;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.7rem;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nav-links .nav-link:hover {
+  opacity: 0.8;
+}
+
+.nav-links .nav-link.active {
+  background-color: var(--primary);
+  color: #fff;
+}
+.nav-links .nav-link.active:hover {
+  opacity: 1;
+}
+.pfp-pic {
+  cursor: pointer;
+  height: 5rem;
+  aspect-ratio: 1;
+  background-color: grey;
+  border-radius: 50%;
+}
+.pfp-pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.cart-pic {
+  cursor: pointer;
+  height: 5.4rem;
+  aspect-ratio: 1;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-pic > img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.user-nav-buttons {
+  display: flex;
+  gap: 3.5rem;
+}

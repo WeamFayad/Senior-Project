@@ -1,0 +1,26 @@
+.downloadBtn img {
+  height: 4rem;
+  align-self: left;
+}
+.downloadBtn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  justify-content: center;
+  width: 50%;
+  gap: 1rem;
+}
+.downloadBtn-p1 {
+  font-weight: 600;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.downloadBtn-p2 {
+  font-weight: 700;
+  margin-top: 0.5rem;
+  white-space: nowrap;
+}
