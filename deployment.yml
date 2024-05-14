@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: waelganem/frontend:2.0.7
+          image: weamfayad18/frontend:2.0.2
           ports:
             - containerPort: 80
 
@@ -38,7 +38,8 @@ spec:
     spec: 
       containers: 
         - name: backend 
-          image: waelganem/backend:2.0.7
+          image: weamfayad18/backend:2.0.2
+
           ports:
             - containerPort: 8000
           env: 
@@ -46,7 +47,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: mongodb-secret
-                  key: MONGODB_URI
+                  key: MONGODB_URL
 
 ---
 
