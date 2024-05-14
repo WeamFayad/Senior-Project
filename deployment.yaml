@@ -43,12 +43,19 @@ spec:
 
           ports:
             - containerPort: 8000
-          env: 
-            - name: MONGODB_URI
-              valueFrom:
-                secretKeyRef:
-                  name: mongodb-secret
-                  key: MONGODB_URL
+
+        env:
+          - name: MONGO_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: mongodb-secret
+                key: username
+          - name: MONGO_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: mongodb-secret
+                key: password
+
 
 ---
 
