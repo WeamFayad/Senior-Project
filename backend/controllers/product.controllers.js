@@ -7,7 +7,7 @@ const addProduct = async (req, res) => {
     barcode,
     name,
     price,
-    category = "OTHERS",
+    category = "Farm-Fresh Produce",
     description,
     details,
     stock,
@@ -44,12 +44,12 @@ const addProduct = async (req, res) => {
 
     //category
     const validCategories = [
-      "DOG SUPPLIES",
-      "CAT SUPPLIES",
-      "BIRD SUPPLIES",
-      "FISH SUPPLIES",
-      "SMALL ANIMAL SUPPLIES",
-      "ACCESSORIES",
+      "FARM-FRESH PRODUCE",
+      "ARTISANAL FOODS",
+      "SPECIALTY BEVERAGES",
+      "HANDMADE CRAFTS",
+      "ECO-FRIENDLY PRODUCTS",
+      "HEALTH & WELLNESS",
       "OTHERS",
     ];
     if (!validCategories.includes(category)) {
